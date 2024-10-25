@@ -1,7 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
 import Svg, { Path } from "react-native-svg";
-import Icon from "react-native-vector-icons/FontAwesome";
-import IonIcons from "react-native-vector-icons/Ionicons";
 import { Feather } from "@expo/vector-icons";
 export default function Navbar() {
   return (
@@ -62,11 +60,16 @@ export default function Navbar() {
 
 const styles = StyleSheet.create({
   dash: {
-    borderBlockColor: "black",
+    backgroundColor: "black",
+    width: 20,
+    height: 3,
+    borderRadius: 10,
   },
   settingsMenu: {
     width: 24,
-    height: 24,
+    height: 18,
+    justifyContent: "space-between",
+    marginHorizontal: 5,
   },
   PlayerRating: {
     fontSize: 20,
