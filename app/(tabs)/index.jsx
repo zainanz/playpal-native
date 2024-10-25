@@ -25,19 +25,19 @@ export default function index() {
       <MatchToday />
       <View style={styles.actionContainers}>
         <ActionContainer
-          icon={<Feather name="search" size={40} color="black" />}
+          icon={<Feather name="search" size={40} color="white" />}
         />
         <ActionContainer
-          icon={<Feather name="addusergroup" size={40} color="black" />}
+          icon={<Feather name="addusergroup" size={40} color="white" />}
         />
       </View>
       <View style={styles.actionContainers}>
         <ActionContainer
-          icon={<Feather name="game" size={40} color="black" />}
+          icon={<Feather name="game" size={40} color="white" />}
           single={true}
         />
         <ActionContainer
-          icon={<Feather name="game" size={40} color="black" />}
+          icon={<Feather name="game" size={40} color="white" />}
           single={true}
         />
       </View>

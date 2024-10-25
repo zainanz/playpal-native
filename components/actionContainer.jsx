@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 16,
+    marginVertical: 10,
   },
   subText: {},
   topHalf: {

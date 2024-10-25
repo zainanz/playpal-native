@@ -33,21 +33,21 @@ export default function Navbar() {
               style={styles.starBottom}
               name="star"
               size={18}
-              color="black"
+              color="white"
             />
-            <Feather name="star" size={22} color="black" />
+            <Feather name="star" size={22} color="white" />
             <Feather
               style={styles.starBottom}
               name="star"
               size={18}
-              color="black"
+              color="white"
             />
           </View>
           <Text style={styles.PlayerRating}>3.5</Text>
         </View>
         <View style={styles.navdDetailsContainer}>
-          <Feather name="message-square" size={24} color="black" />
-          <Feather name="bell" size={24} color="black" />
+          <Feather name="message-square" size={24} color="white" />
+          <Feather name="bell" size={24} color="white" />
           <View style={styles.settingsMenu}>
             <View style={styles.dash}></View>
             <View style={styles.dash}></View>
@@ -61,7 +61,7 @@ export default function Navbar() {
 
 const styles = StyleSheet.create({
   dash: {
-    backgroundColor: "black",
+    backgroundColor: "white",
     width: 20,
     height: 3,
     borderRadius: 10,
@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     marginHorizontal: 5,
+    color: "white",
   },
 
   navdDetailsContainer: {
@@ -102,7 +103,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   rectangle: {
-    backgroundColor: "#000",
     width: "100%",
     position: "absolute",
     height: 5,
@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   logoText: {
+    color: "white",
     fontSize: 21,
     fontFamily: "Poppins-Bold",
   },

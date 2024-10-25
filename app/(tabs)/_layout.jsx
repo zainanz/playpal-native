@@ -1,5 +1,6 @@
 import { Tabs } from "expo-router";
 import { Image, StyleSheet, View, Text } from "react-native";
+import AntDesign from "@expo/vector-icons/AntDesign";
 import { color } from "../../assets/colors";
 
 const CustomTabBarIcon = ({ icon, label, isSelected }) => {
@@ -7,8 +8,15 @@ const CustomTabBarIcon = ({ icon, label, isSelected }) => {
     <View
       style={[styles.iconContainer, isSelected && styles.selectedContainer]}
     >
-      <Image source={icon} style={styles.image} />
-      <Text style={styles.label}>{label}</Text>
+      <AntDesign name={icon} size={24} color={isSelected ? "black" : "white"} />
+      <Text
+        style={[
+          styles.label,
+          isSelected ? styles.colorBlack : styles.colorWhite,
+        ]}
+      >
+        {label}
+      </Text>
     </View>
   );
 };
@@ -22,12 +30,10 @@ export default function TabLayout() {
           height: 85,
           backgroundColor: color.accent,
           alignItems: "center",
+          overflow: "visible",
         },
         tabBarIcon: ({ focused }) => {
-          const icon =
-            route.name === "index"
-              ? require("../../assets/images/home-icon.png")
-              : require("../../assets/images/user.png");
+          const icon = route.name === "index" ? "home" : "user";
           return (
             <CustomTabBarIcon
               icon={icon}
@@ -38,31 +44,34 @@ export default function TabLayout() {
         },
       })}
     >
-      <Tabs.Screen name="index" options={{ title: "" }} />
-      <Tabs.Screen name="profile" options={{ title: "" }} />
+      <Tabs.Screen name="index" />
+      <Tabs.Screen name="profile" />
     </Tabs>
   );
 }
 
 const styles = StyleSheet.create({
+  colorWhite: {
+    color: "white",
+  },
+  colorBlack: {
+    color: "black",
+  },
   iconContainer: {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    width: 60,
-    height: 60,
+    width: 65,
+    height: 65,
   },
   selectedContainer: {
     backgroundColor: color.accentShade,
     borderRadius: 30,
   },
-  image: {
-    width: 20,
-    height: 20,
-  },
+
   label: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: "bold",
-    color: "black",
+    color: "white",
   },
 });
