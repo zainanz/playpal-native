@@ -1,13 +1,14 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
-import Navbar from "../components/navbar";
-import MatchToday from "../components/matchtoday";
-import ActionContainer from "../components/actionContainer";
+import Navbar from "../../components/navbar";
+import MatchToday from "../../components/matchtoday";
+import ActionContainer from "../../components/actionContainer";
 import { Feather } from "@expo/vector-icons";
+import { SafeAreaView } from "react-native-safe-area-context";
 export default function index() {
   let [fontsLoaded] = useFonts({
-    "Poppins-Bold": require("../assets/fonts/Poppins-Bold.ttf"),
+    "Poppins-Bold": require("../../assets/fonts/Poppins-Bold.ttf"),
   });
   if (!fontsLoaded) {
     return (
@@ -17,7 +18,7 @@ export default function index() {
     );
   }
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Navbar />
       {/* Conditional Rendered Component */}
       <MatchToday />
@@ -39,7 +40,7 @@ export default function index() {
           single={true}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
