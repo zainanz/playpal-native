@@ -21,6 +21,7 @@ export default function TabLayout() {
         tabBarStyle: {
           height: 85,
           backgroundColor: color.accent,
+          alignItems: "center",
         },
         tabBarIcon: ({ focused }) => {
           const icon =

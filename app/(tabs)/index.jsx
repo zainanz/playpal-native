@@ -6,6 +6,7 @@ import MatchToday from "../../components/matchtoday";
 import ActionContainer from "../../components/actionContainer";
 import { Feather } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
+import JoinUs from "../../components/joinus";
 export default function index() {
   let [fontsLoaded] = useFonts({
     "Poppins-Bold": require("../../assets/fonts/Poppins-Bold.ttf"),
@@ -40,6 +41,7 @@ export default function index() {
           single={true}
         />
       </View>
+      <JoinUs />
     </SafeAreaView>
   );
 }
@@ -54,5 +56,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#EFEFEF",
+    justifyContent: "space-evenly",
   },
 });
