@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { useFonts } from "expo-font";
 import Navbar from "../components/navbar";
+import MatchToday from "../components/matchtoday";
 export default function index() {
   let [fontsLoaded] = useFonts({
     "Poppins-Bold": require("../assets/fonts/Poppins-Bold.ttf"),
@@ -15,9 +16,9 @@ export default function index() {
   }
   return (
     <View style={styles.container}>
-      <View style={styles.navContainer}>
-        <Navbar />
-      </View>
+      <Navbar />
+      {/* Conditional Rendered Component */}
+      <MatchToday></MatchToday>
     </View>
   );
 }

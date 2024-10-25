@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import Svg, { Path } from "react-native-svg";
 import { Feather } from "@expo/vector-icons";
+import { color } from "../assets/colors";
 export default function Navbar() {
   return (
     <View style={styles.navContainer}>
@@ -17,7 +18,7 @@ export default function Navbar() {
           <Path
             style={styles.svgPath}
             d="M33.7469 0.00550231C19.3663 0.261077 14.5346 9.35646 13.9247 14L0 0.00550231H33.7469C34.1568 -0.00178271 34.5744 -0.00188532 35 0.00550231H33.7469Z"
-            fill="#B8D8C9"
+            fill={color.accent}
           />
         </Svg>
       </View>
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
   navDetails: {
     paddingHorizontal: 10,
     flexDirection: "row",
-    backgroundColor: "#B8D8C9",
+    backgroundColor: color.accent,
     width: "60%",
     height: "80%",
     borderRadius: 20,
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
     width: "100%",
     position: "absolute",
     height: 5,
-    backgroundColor: "#B8D8C9",
+    backgroundColor: color.accent,
   },
   svgPath: {
     width: 30,
@@ -127,7 +128,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: 144,
     height: 44,
-    backgroundColor: "#B8D8C9",
+    backgroundColor: color.accent,
     justifyContent: "center",
     alignItems: "center",
     borderTopRightRadius: 20,
