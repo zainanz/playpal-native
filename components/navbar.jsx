@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
     height: "80%",
     borderRadius: 20,
     marginTop: 10,
+    marginHorizontal: "auto",
     alignItems: "center",
     justifyContent: "space-between",
   },
@@ -122,7 +123,7 @@ const styles = StyleSheet.create({
   },
   navContainer: {
     flexDirection: "row",
-    justifyContent: "space-evenly",
+    width: "100%",
   },
   logoBubble: {
     flexDirection: "row",

@@ -1,3 +1,4 @@
 export const color = {
-    accent:"#B8D8C9"
+    accent:"#B8D8C9",
+    gray:"#D9D9D9"
 }
