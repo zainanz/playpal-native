@@ -1,5 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 import Svg, { Path } from "react-native-svg";
+import Icon from "react-native-vector-icons/FontAwesome";
+import IonIcons from "react-native-vector-icons/Ionicons";
+import { Feather } from "@expo/vector-icons";
 export default function Navbar() {
   return (
     <View style={styles.navContainer}>
@@ -23,20 +26,75 @@ export default function Navbar() {
       <View style={styles.rectangle}>
         <Text></Text>
       </View>
+
       <View style={styles.navDetails}>
-        <Text></Text>
+        <View style={styles.navdDetailsContainer}>
+          <View style={styles.starsContainer}>
+            <Feather
+              style={styles.starBottom}
+              name="star"
+              size={18}
+              color="black"
+            />
+            <Feather name="star" size={22} color="black" />
+            <Feather
+              style={styles.starBottom}
+              name="star"
+              size={18}
+              color="black"
+            />
+          </View>
+          <Text style={styles.PlayerRating}>3.5</Text>
+        </View>
+        <View style={styles.navdDetailsContainer}>
+          <Feather name="message-square" size={24} color="black" />
+          <Feather name="bell" size={24} color="black" />
+          <View style={styles.settingsMenu}>
+            <View style={styles.dash}></View>
+            <View style={styles.dash}></View>
+            <View style={styles.dash}></View>
+          </View>
+        </View>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  dash: {
+    borderBlockColor: "black",
+  },
+  settingsMenu: {
+    width: 24,
+    height: 24,
+  },
+  PlayerRating: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginHorizontal: 5,
+  },
+
+  navdDetailsContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  starBottom: {
+    alignSelf: "flex-end",
+  },
+  starsContainer: {
+    flexDirection: "row",
+    height: "70%",
+  },
   navDetails: {
+    paddingHorizontal: 10,
+    flexDirection: "row",
     backgroundColor: "#B8D8C9",
     width: "60%",
     height: "80%",
     borderRadius: 20,
     marginTop: 10,
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   rectangle: {
     backgroundColor: "#000",
