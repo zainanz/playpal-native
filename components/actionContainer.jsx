@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 16,
+    marginVertical: 10,
   },
   subText: {},
   topHalf: {
@@ -55,13 +56,14 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
     borderTopLeftRadius: 15,
     justifyContent: "center",
-    paddingHorizontal: 10,
+    paddingHorizontal: 15,
   },
   bottomHalf: {
     padding: 5,
     borderBottomRightRadius: 15,
     borderBottomLeftRadius: 15,
     backgroundColor: "white",
+    paddingHorizontal: 15,
   },
   container: {
     width: "45%",
