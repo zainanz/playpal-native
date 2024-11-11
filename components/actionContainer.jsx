@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   },
   subText: {
     fontSize: 12,
+
   },
   topHalf: {
     backgroundColor: color.gray,
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 15,
     borderBottomLeftRadius: 15,
     backgroundColor: "white",
+    paddingHorizontal: 15,
   },
   container: {
     width: "45%",
