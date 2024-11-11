@@ -33,21 +33,21 @@ export default function Navbar() {
               style={styles.starBottom}
               name="star"
               size={18}
-              color="white"
+              color="black"
             />
-            <Feather name="star" size={22} color="white" />
+            <Feather name="star" size={22} color="black" />
             <Feather
               style={styles.starBottom}
               name="star"
               size={18}
-              color="white"
+              color="black"
             />
           </View>
           <Text style={styles.PlayerRating}>3.5</Text>
         </View>
         <View style={styles.navdDetailsContainer}>
-          <Feather name="message-square" size={24} color="white" />
-          <Feather name="bell" size={24} color="white" />
+          <Feather name="message-square" size={24} color="black" />
+          <Feather name="bell" size={24} color="black" />
           <View style={styles.settingsMenu}>
             <View style={styles.dash}></View>
             <View style={styles.dash}></View>
@@ -61,7 +61,7 @@ export default function Navbar() {
 
 const styles = StyleSheet.create({
   dash: {
-    backgroundColor: "white",
+    backgroundColor: "black",
     width: 20,
     height: 3,
     borderRadius: 10,
@@ -76,7 +76,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     marginHorizontal: 5,
-    color: "white",
   },
 
   navdDetailsContainer: {

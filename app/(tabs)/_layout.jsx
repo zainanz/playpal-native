@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import { Image, StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { color } from "../../assets/colors";
 
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     height: 65,
   },
   selectedContainer: {
-    backgroundColor: color.accentShade,
+    backgroundColor: "white",
     borderRadius: 30,
   },
 

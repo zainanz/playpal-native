@@ -40,7 +40,5 @@ const styles = StyleSheet.create({
     marginVertical: 15,
     justifyContent: "space-evenly",
     paddingHorizontal: 10,
-    borderColor: "#999",
-    borderWidth: 1,
   },
 });
