@@ -41,16 +41,21 @@ const styles = StyleSheet.create({
   iconContainer: {
     backgroundColor: color.accent,
     width: 60,
+    marginBottom: 10,
     height: 50,
     borderRadius: 15,
     justifyContent: "center",
     alignItems: "center",
   },
   header: {
+    fontWeight: "bold",
     fontSize: 16,
-    marginVertical: 10,
+    marginVertical: 0,
   },
-  subText: {},
+  subText: {
+    fontSize: 12,
+
+  },
   topHalf: {
     backgroundColor: color.gray,
     borderTopRightRadius: 15,
@@ -59,7 +64,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   bottomHalf: {
-    padding: 5,
+    padding: 15,
     borderBottomRightRadius: 15,
     borderBottomLeftRadius: 15,
     backgroundColor: "white",

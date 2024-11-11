@@ -102,7 +102,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   rectangle: {
-    backgroundColor: "#000",
     width: "100%",
     position: "absolute",
     height: 5,
@@ -118,6 +117,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   logoText: {
+    color: "white",
     fontSize: 21,
     fontFamily: "Poppins-Bold",
   },

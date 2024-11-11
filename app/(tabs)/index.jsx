@@ -5,6 +5,8 @@ import Navbar from "../../components/navbar";
 import MatchToday from "../../components/matchtoday";
 import ActionContainer from "../../components/actionContainer";
 import { Feather } from "@expo/vector-icons";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import JoinUs from "../../components/joinus";
 export default function index() {
@@ -25,19 +27,33 @@ export default function index() {
       <MatchToday />
       <View style={styles.actionContainers}>
         <ActionContainer
-          icon={<Feather name="search" size={40} color="black" />}
+          header="Book a court"
+          subText="if you already know who you are playing with"
+          icon={<Feather name="book" size={40} color="black" />}
         />
         <ActionContainer
-          icon={<Feather name="addusergroup" size={40} color="black" />}
+          header="Find open match"
+          subText="if you looking for players available to play today"
+          icon={<Feather name="search" size={40} color="black" />}
         />
       </View>
       <View style={styles.actionContainers}>
         <ActionContainer
-          icon={<Feather name="game" size={40} color="black" />}
+          header="Play a tournament"
+          icon={
+            <MaterialCommunityIcons
+              name="trophy-award"
+              size={40}
+              color="black"
+            />
+          }
           single={true}
         />
         <ActionContainer
-          icon={<Feather name="game" size={40} color="black" />}
+          header="Book your coach"
+          icon={
+            <MaterialIcons name="manage-accounts" size={40} color="black" />
+          }
           single={true}
         />
       </View>

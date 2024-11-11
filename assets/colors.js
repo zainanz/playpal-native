@@ -1,5 +1,5 @@
 export const color = {
-    accent:"#B8D8C9",
+    accent:"#419E91",
     gray:"#D9D9D9",
     accentShade:"#B8EFB8"
 }
